@@ -1,0 +1,39 @@
+/* App-specific styles */
+
+/* Ensure smooth scroll behavior is disabled for GSAP */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* Section stacking */
+.section-pinned {
+  will-change: transform;
+}
+
+/* Image optimization */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Button transitions */
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Focus states */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #B9FF2C;
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(185, 255, 44, 0.3);
+  color: inherit;
+}
